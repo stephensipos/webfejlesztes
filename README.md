@@ -2,7 +2,7 @@
 
 [Feladatleírás](./PHP_ZH_LEV.pdf)
 
-[Demo](https://kedvencszinem.stephensipos.com)
+[Demo](https://webfejlesztes.stephensipos.com)
 
 # Jelszavak a demo-oldalhoz:
 
