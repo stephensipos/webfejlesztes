@@ -7,42 +7,44 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
         <link rel="stylesheet" href="/css/custom.css">
     </head>
-    <body>
-        <div class="container-fluid content">
-            <header class="container text-center header">
-                <h1>Háttérképek!</h1>
-                <h3>Mindenkinek a saját szája-íze szerint</h3>
-                <ul>
-                </ul>
-                <hr />
-            </header>
-            <content>
-                <?php
-                if (isset($_GET["gallery"])) {
-                    require("../webfejlesztes/gallery.php");
-                } else {
-                    require("../webfejlesztes/login.php");
-                }
-                ?>
-            </content>
-            <footer  class="footer text-center">
-                <span class="small">Beadandó feladat Webfejlesztés tárgyból</span>
-                <dl class="dl-horizontal">
-                    <dt>Készítette</dt>
-                    <dd>Sipos István</dd>
-                    <dt>NEPTUN kód</dt>
-                    <dd>F5D7DV</dd>
-                    <dt>Szerintem</dt>
-                    <dd>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        (5-ös)
-                    </dd>
-                </dl>
-            </footer>
+    <body class="overflow-auto">
+        <div class="page">
+            <div class="container-fluid page-content">
+                <header class="container text-center">
+                    <h1>Háttérképek!</h1>
+                    <h3>Mindenkinek a saját szája-íze szerint</h3>
+                    <ul>
+                    </ul>
+                    <hr />
+                </header>
+                <content>
+                    <?php
+                    if (isset($_GET["gallery"])) {
+                        require("../webfejlesztes/gallery.php");
+                    } else {
+                        require("../webfejlesztes/login.php");
+                    }
+                    ?>
+                </content>
+                <footer  class="text-center">
+                    <span class="small">Beadandó feladat Webfejlesztés tárgyból</span>
+                    <dl class="dl-horizontal">
+                        <dt>Készítette</dt>
+                        <dd>Sipos István</dd>
+                        <dt>NEPTUN kód</dt>
+                        <dd>F5D7DV</dd>
+                        <dt>Szerintem</dt>
+                        <dd>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            (5-ös)
+                        </dd>
+                    </dl>
+                </footer>
+            </div>
         </div>
         <script
 			  src="https://code.jquery.com/jquery-3.5.1.min.js"
